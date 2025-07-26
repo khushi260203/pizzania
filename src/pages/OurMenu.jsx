@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 const OurMenu = () => {
+  useEffect(()=> {
+    window.scrollTo(0,0)
+
+  },[])
   return (
     <>
       <div className="relative w-full h-[85vh]">

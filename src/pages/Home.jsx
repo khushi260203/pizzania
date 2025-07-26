@@ -1,6 +1,18 @@
 import { Pizza, Smartphone, Store } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const { register, handleSubmit, reset } = useForm();
+  const SubmitHandler = () => {
+    reset();
+    navigate("/ourmenu");
+  };
+  const ViewHandler = () => {
+    window.location.href = "/offers";
+  };
+
   return (
     <div className="relative w-full min-h-screen justify-center text-white">
       <div className="w-full h-[150vh]">
@@ -15,7 +27,7 @@ const Home = () => {
 
         <div className="absolute top-44 lg:top-[60vh] leading-[1.3] left-1/2 -translate-x-1/2 z-[4]">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="w-full text-center font-bold text-[10vh]">
+            <h1 className="w-full text-center font-bold text-4xl md:text-[10vh]">
               AUTHENTIC ITALIAN PIZZERIA
             </h1>
             <p className="w-[70vw] text-center mt-4">
@@ -24,11 +36,11 @@ const Home = () => {
               velit suspendisse aliquam lacus sollicitudin mauris.
             </p>
           </div>
-          <div className="w-full flex justify-center mt-10 gap-10 md:gap-20 flex-col md:flex-row">
-            <button className="bg-red-600 py-2 px-4 w-full md:w-fit rounded-md hover:bg-red-400 text-xl">
+          <div className="w-full flex justify-center items-center mt-10 gap-10 md:gap-20 flex-col md:flex-row">
+            <button className="bg-red-600 py-1 md:py-2 px-2 md:px-4  w-[50vw] md:w-fit rounded-md hover:bg-red-400 text-xl">
               Book A Table
             </button>
-            <button className="border-white w-full md:w-fit hover:bg-white border-[1.3px] py-2 px-4 hover:text-black text-xl rounded-md">
+            <button className="border-white py-1 md:py-2 px-2 md:px-4  w-[50vw] md:w-fit hover:bg-white border-[1.3px] py-2 px-4 hover:text-black text-xl rounded-md">
               TakeAway
             </button>
           </div>
@@ -38,7 +50,7 @@ const Home = () => {
       <div className="relative h-[280vh] md:h-[110vh]  w-full">
         <div>
           <img
-            className="absolute left-1/2 -translate-x-1/2 -top-45 w-[50vh] xl:w-[75vh] z-[1000000] hover:-top-[20vw] hover:transition-all hover:duration-300 hover:ease-in-out rounded-full"
+            className="absolute left-1/2 -translate-x-1/2 -top-40 md:-top-45 w-[40vh] xl:w-[75vh] z-[1000000] hover:-top-[20vw] hover:transition-all hover:duration-300 hover:ease-in-out rounded-full"
             src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-header-pizza-img.png"
             alt=""
           />
@@ -116,7 +128,10 @@ const Home = () => {
               <h1 className="text-xl md:text-2xl lg:text-4xl text-center font-semibold mt-5">
                 Online Delivery
               </h1>
-              <a className="mt-5 text-md lg:text-xl text-center whitespace-nowrap" href="http://localhost:5173/">
+              <a
+                className="mt-5 text-md lg:text-xl text-center whitespace-nowrap"
+                href="http://localhost:5173/"
+              >
                 Order Online
               </a>
             </div>
@@ -125,7 +140,10 @@ const Home = () => {
               <h1 className="text-xl md:text-2xl lg:text-4xl text-center font-semibold mt-5">
                 Click & Collect
               </h1>
-              <a className="mt-5 text-md lg:text-xl text-center whitespace-nowrap" href="http://localhost:5173/">
+              <a
+                className="mt-5 text-md lg:text-xl text-center whitespace-nowrap"
+                href="http://localhost:5173/"
+              >
                 Takeout Order
               </a>
             </div>
@@ -134,7 +152,10 @@ const Home = () => {
               <h1 className=" text-xl md:text-2xl lg:text-4xl text-center font-semibold mt-5">
                 Restaurant Dining
               </h1>
-              <a className="mt-5 text-md lg:text-xl text-center whitespace-nowrap" href="http://localhost:5173/">
+              <a
+                className="mt-5 text-md lg:text-xl text-center whitespace-nowrap"
+                href="http://localhost:5173/"
+              >
                 Book A Table
               </a>
             </div>
@@ -153,18 +174,23 @@ const Home = () => {
           Cursus ultricies in maecenas pulvinar ultrices integer quam amet,
           semper dictumst sit interdum ut venenatis pellentesque nunc.
         </p>
-        <button className="mt-15 border border-red-500 px-3 md:px-6 md:py-2 hover:bg-red-500 rounded hover:text-white text-red-500 text-lg md:text-2xl">
+        <button
+          onClick={handleSubmit(SubmitHandler)}
+          className="mt-5 md:mt-15 border border-red-500 px-3 md:px-6 md:py-2 hover:bg-red-500 rounded hover:text-white text-red-500 text-lg md:text-2xl"
+        >
           View All Menu
         </button>
       </div>
       <div className="w-full h-[150h] sm:h-[180vh] md:h-[130vh] mt-10 md:-mt-70 flex flex-col md:flex-row justify-between gap-30 md:justify-between items-center text-black p-5 mb-10">
         <div className="w-[30vw] h-[30vw] md:-mt-40 flex flex-col items-center">
           <img
-          className="w-[40vw] h-[40vw] object-cover rounded-full hover:pb-2 hover:transition-all hover:ease-linear duration-200"
+            className="w-[40vw] h-[40vw] object-cover rounded-full hover:pb-2 hover:transition-all hover:ease-linear duration-200"
             src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-menu-pasta-img.png"
             alt=""
           />
-          <h1 className="mt-2 text-2xl md:text-4xl font-bold text-red-500">Pasta</h1>
+          <h1 className="mt-2 text-2xl md:text-4xl font-bold text-red-500">
+            Pasta
+          </h1>
         </div>
 
         <div className="w-[30vw] h-[30vw] md:mt-10 flex flex-col justify-center items-center">
@@ -173,7 +199,9 @@ const Home = () => {
             src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-menu-pizza-img.png"
             alt=""
           />
-          <h1 className="mt-2 text-2xl md:text-4xl font-bold text-red-500">Pizza</h1>
+          <h1 className="mt-2 text-2xl md:text-4xl font-bold text-red-500">
+            Pizza
+          </h1>
         </div>
 
         <div className="w-[30vw] h-[30vw] md:mt-80 flex flex-col justify-center items-center">
@@ -182,7 +210,9 @@ const Home = () => {
             src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-menu-dessert-img.png"
             alt=""
           />
-          <h1 className="mt-2 text-2xl md:text-4xl font-bold text-red-500">Dessert</h1>
+          <h1 className="mt-2 text-2xl md:text-4xl font-bold text-red-500">
+            Dessert
+          </h1>
         </div>
       </div>
 
@@ -191,7 +221,10 @@ const Home = () => {
           <h1 className="text-4xl lg:text-7xl font-semibold tracking-tighter text-black">
             Best Deals!
           </h1>
-          <button className="border border-red-500 rounded px-3 md:px-6 md:py-2 text-lg lg:text-2xl text-red-500 hover:bg-red-500 hover:text-white font-normal tracking-tighter ">
+          <button
+            onClick={handleSubmit(ViewHandler)}
+            className="border border-red-500 rounded px-3 md:px-6 md:py-2 text-md lg:text-2xl text-red-500 hover:bg-red-500 hover:text-white font-normal tracking-tighter "
+          >
             View All
           </button>
         </div>
