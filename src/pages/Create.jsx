@@ -31,52 +31,52 @@ const Create = () => {
           </h1>
         </div>
       </div>
-      <div className="w-full h-[330vh] md:h-[280vh] lg:h-[180vh] tracking-tighter px-5 mt-20 flex flex-col lg:flex-row">
+      <div className="w-full h-[370vh] md:h-[350vh] lg:h-[180vh] tracking-tighter px-5 mt-20 flex flex-col lg:flex-row">
         <div className="w-full lg:w-[65vw] h-[200vh] lg:h-[150vh]  rounded-l-4xl mx-auto">
-          <h1 className="text-red-500 font-bold text-6xl text-center ">
+          <h1 className="text-red-500 font-bold text-3xl md:text-6xl text-center ">
             Steps For Creating Your Own Pizza
           </h1>
-          <p className="text-lg mt-5 text-center">
+          <p className="text-md md:text-lg mt-5 text-center">
             Erat pharetra suscipit tincidunt in eget ultricies lectus posuere
             arcu.
           </p>
-          <div className="flex w-full h-full px-5 mt-10 ">
-            <div className="w-[70vw] lg:w-[25vw] flex flex-col gap-10">
+          <div className="flex flex-col md:flex-row w-full h-full px-2 md:px-5 mt-10 ">
+            <div className="w-[70vw] lg:w-[25vw] flex flex-col md:gap-10">
               <div className="">
-                <h1 className="text-xl text-red-500 font-semibold tracking-tighter">
+                <h1 className="text-lg md:text-xl text-red-500 font-semibold tracking-tighter">
                   Step 1
                 </h1>
-                <h1 className="mt-5 text-4xl text-black tracking-tighter font-semibold">
+                <h1 className="mt-5 text-2xl md:text-4xl text-black tracking-tighter font-semibold">
                   Choose Your Size
                 </h1>
-                <p className="mt-5 font-semibold text-lg tracking-tighter ">
+                <p className="mt-5 font-semibold text-md md:text-lg tracking-tighter ">
                   8″, 12″, 14″, 18″
                 </p>
               </div>
               <div>
-                <h1 className="text-xl text-red-500 font-semibold tracking-tighter mt-5">
+                <h1 className="text-lg md:text-xl text-red-500 font-semibold tracking-tighter mt-5">
                   Step 2
                 </h1>
-                <h1 className="mt-5 text-4xl text-black tracking-tighter font-semibold">
+                <h1 className="mt-5 text-2xl md:text-4xl text-black tracking-tighter font-semibold">
                   Choose Your Sauce
                 </h1>
-                <p className="mt-5 font-semibold text-lg tracking-tighter ">
+                <p className="mt-5 font-semibold text-md md:text-lg tracking-tighter ">
                   Marinara, BBQ, Spicy BBQ, oil,
                   <br /> alfredo, or hot sauce
                 </p>
               </div>
             </div>
-            <div className="w-[80vw] lg:w-[40vw] px-8">
-              <h1 className="text-xl text-red-500 font-semibold tracking-tighter">
+            <div className="w-[80vw] md:w-[40vw] px-2 md:px-8 mt-5">
+              <h1 className="text-lg md:text-xl text-red-500 font-semibold tracking-tighter">
                 Step 3
               </h1>
-              <h1 className="mt-5 text-4xl text-black tracking-tighter font-semibold">
+              <h1 className="mt-5 text-2xl md:text-4xl text-black tracking-tighter font-semibold">
                 Choose Your Topping
               </h1>
-              <h2 className="mt-5 font-semibold text-2xl tracking-tighter ">
+              <h2 className="mt-5 font-semibold text-lg md:text-2xl tracking-tighter ">
                 Traditional Topping
               </h2>
-              <section className="flex gap-x-20 text-lg mt-5">
+              <section className="flex gap-x-20 text-sm md:text-lg mt-5">
                 <div>
                   <ul>
                     <li>
@@ -118,10 +118,10 @@ const Create = () => {
                 </div>
               </section>
               <div>
-                <h2 className="mt-5 font-semibold text-2xl tracking-tighter ">
+                <h2 className="mt-5 font-semibold text:lg md:text-2xl tracking-tighter ">
                   Premium Topping
                 </h2>
-                <section className="flex gap-x-20 text-lg mt-5">
+                <section className="flex gap-x-20 text-sm md:text-lg mt-5">
                   <div>
                     <ul>
                       <li className="">
@@ -157,19 +157,19 @@ const Create = () => {
         </div>
 
         {/* Form  */}
-        <div className="w-full lg:w-[30vw] h-[150vh] lg:h-[130vh] bg-amber-50 rounded-r-4xl px-10">
-          <h1 className="text-red-500 font-bold text-5xl text-center pt-5 ">
+        <div className="w-full lg:w-[30vw] h-[150vh] md:h-[120vh] lg:h-[160vh] bg-amber-50 rounded-r-4xl px-10">
+          <h1 className="text-red-500 font-bold text-3xl md:text-5xl text-center pt-5 ">
             Let's Create Your Own
           </h1>
-          <form onClick={handleSubmit(SubmitHandler)}>
-            <h1 className="text-2xl font-medium">Size</h1>
+          <form>
+            <h1 className="text-lg md:text-2xl font-medium mt-8">Size</h1>
             <select className="border border-gray-400 rounded px-6 w-full lg:w-[20vw] py-2 mt-3">
               <option>8″</option>
               <option>12″</option>
               <option>14″</option>
               <option>18″</option>
             </select>
-            <h1 className="text-2xl font-medium mt-8">Sauce</h1>
+            <h1 className="text-lg md:text-2xl font-medium mt-8">Sauce</h1>
             <select className="border border-gray-400 rounded px-6 w-full lg:w-[20vw] py-2 mt-3">
               <option>Marinara</option>
               <option> BBQ</option>
@@ -178,8 +178,8 @@ const Create = () => {
               <option>alfredo</option>
               <option>hot sauce</option>
             </select>
-            <h1 className="text-4xl font-medium mt-8">Topping</h1>
-            <h1 className="text-2xl font-medium mt-5">Traditional Topping</h1>
+            <h1 className="text-xl md:text-4xl font-medium mt-8">Topping</h1>
+            <h1 className="text-lg md:text-2xl font-medium mt-5">Traditional Topping</h1>
             <select className="border border-gray-400 rounded px-6 w-full lg:w-[20vw] py-2 mt-3">
               <option>Extra Mozzarella</option>
               <option> Canadian Bacon</option>
@@ -192,7 +192,7 @@ const Create = () => {
               <option>Feta Cheese</option>
               <option>Italian Beef</option>
             </select>
-            <h1 className="text-2xl font-medium mt-5">Premium Topping</h1>
+            <h1 className="text-lg md:text-2xl font-medium mt-5">Premium Topping</h1>
             <select className="border border-gray-400 rounded px-6 w-full lg:w-[20vw] py-2 mt-3">
               <option>Ricotta Cheese</option>
               <option> Goat Cheese</option>
@@ -202,7 +202,7 @@ const Create = () => {
               <option>Fresh Arugula</option>
             </select>
             <div className="flex items-center justify-center lg:justify-self-start">
-              <button className="mt-8 border border-red-500 text-red-500 hover:text-white hover:bg-red-500 px-8 py-2 rounded text-xl font-bold">
+              <button  onClick={handleSubmit(SubmitHandler)} className="mt-8 border border-red-500 text-red-500 hover:text-white hover:bg-red-500 px-4 md:px-8 py-1 md:py-2 rounded text-lg md:text-xl font-bold">
                 Create
               </button>
             </div>
