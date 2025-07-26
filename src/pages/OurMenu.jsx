@@ -53,7 +53,7 @@ const OurMenu = () => {
       </div>
 
       {/* Pasta */}
-      <div className="w-full h-[160vh] md:h-[120vh] tracking-tighter">
+      <div className="w-full h-[200vh] md:h-[140vh] tracking-tighter">
         <div className="w-full flex flex-col md:flex-row md:items-center justify-between px-10">
           <h1 className="text-5xl lg:text-7xl text-red-500 font-bold w-[20vw]">
             Pasta
@@ -66,7 +66,7 @@ const OurMenu = () => {
         </div>
         {/* Pasta Items */}
         <div className="flex flex-col md:flex-row">
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-pasta-img-1.jpg"
@@ -81,7 +81,7 @@ const OurMenu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-pasta-img-1.jpg"
@@ -99,7 +99,7 @@ const OurMenu = () => {
         </div>
 
         <div className="flex flex-col md:flex-row">
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-pasta-img-1.jpg"
@@ -114,7 +114,7 @@ const OurMenu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-pasta-img-1.jpg"
@@ -133,7 +133,7 @@ const OurMenu = () => {
       </div>
 
       {/* Pizza */}
-      <div className="w-full h-[160vh] md:h-[120vh] tracking-tighter">
+      <div className="w-full h-[300vh] md:h-[150vh] tracking-tighter">
         <div className="w-full flex flex-col md:flex-row justify-between px-10">
           <h1 className="text-5xl lg:text-7xl text-red-500 font-bold w-[20vw]">
             Pizza
@@ -146,7 +146,7 @@ const OurMenu = () => {
         </div>
         {/* Pizza Items */}
         <div className="flex flex-col md:flex-row">
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizza-img-1.jpg"
@@ -161,7 +161,7 @@ const OurMenu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizza-img-2.jpg"
@@ -180,7 +180,7 @@ const OurMenu = () => {
         </div>
 
         <div className="flex flex-col md:flex-row">
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizza-img-1.jpg"
@@ -195,7 +195,7 @@ const OurMenu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizza-img-2.jpg"
@@ -215,7 +215,7 @@ const OurMenu = () => {
       </div>
 
       {/* Dessert */}
-      <div className="w-full h-[160vh] md:h-[120vh] tracking-tighter">
+      <div className="w-full h-[250vh] md:h-[140vh] tracking-tighter">
         <div className="w-full flex flex-col md:flex-row justify-between px-10">
           <h1 className="text-5xl lg:text-7xl text-red-500 font-bold w-[20vw]">
             Dessert
@@ -244,7 +244,7 @@ const OurMenu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-dessert-img-2.jpg"
@@ -263,7 +263,7 @@ const OurMenu = () => {
         </div>
 
         <div className="flex flex-col md:flex-row">
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-dessert-img-1.jpg"
@@ -279,7 +279,7 @@ const OurMenu = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-20 md:mt-30 px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
+          <div className="flex mt-20 md:mt-30 px-3 md:px-10 w-full md:w-[70vw] tracking-tighter gap-x-5">
             <img
               className="rounded-md w-36 h-24 hover:ml-2 hover:transition-all hover:ease-linear duration-200"
               src="https://websitedemos.net/pizzeria-04/wp-content/uploads/sites/791/2021/03/pizzeria-template-dessert-img-2.jpg"

@@ -35,7 +35,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="relative h-[230vh] md:h-[110vh]  w-full">
+      <div className="relative h-[280vh] md:h-[110vh]  w-full">
         <div>
           <img
             className="absolute left-1/2 -translate-x-1/2 -top-45 w-[50vh] xl:w-[75vh] z-[1000000] hover:-top-[20vw] hover:transition-all hover:duration-300 hover:ease-in-out rounded-full"
@@ -44,7 +44,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="w-full h-[100vh] flex justify-between items-center flex-col md:flex-row mt-6 text-black p-5">
+        <div className="w-full h-[200vh] md:h-[100vh] flex justify-between items-center flex-col md:flex-row mt-6 text-black p-5">
           <div className="w-full md:w-[30vw] h-[80vh] mt-40 md:mt-50 flex flex-col items-center">
             <img
               className="w-60 h-60 object-cover rounded-full hover:mt-3 hover:transition-all hover:ease-linear duration-200"
@@ -100,9 +100,9 @@ const Home = () => {
         />
         <div className="absolute w-full h-full z-[2] bg-[#000000b6] top-0 "></div>
 
-        <div className="z-[4] w-full flex flex-col lg:flex-row px-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-white tracking-tighter">
+        <div className="z-[4] w-full flex flex-col lg:flex-row md:px-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-white tracking-tighter">
           <div className="left flex flex-col">
-            <h1 className="text-7xl font-bold leading-tight text-center">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight text-center">
               Bringing Happiness To You
             </h1>
             <h2 className="text-xl mt-5 leading-tight text-center">
@@ -142,18 +142,18 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full h-[100vh] z-[4] mt-30 flex flex-col items-center tracking-tighter">
-        <h2 className="text-red-500 text-center font-semibold text-xl">
+      <div className="w-full h-[50vh] md:h-[100vh] z-[4] mt-30 flex flex-col items-center tracking-tighter">
+        <h2 className="text-red-500 text-center font-semibold text:lg md:text-xl">
           Choose Your Flavour
         </h2>
-        <h1 className="text-7xl text-center leading-[1.1] mt-3 font-semibold text-black">
+        <h1 className="text-4xl md:text-7xl text-center leading-[1.1] mt-3 font-semibold text-black">
           Food that brings people together!
         </h1>
-        <p className="text-black mt-5 text-xl leading-[1.4] w-[50vw] tracking-tighter text-center">
+        <p className="text-black mt-5 text-sm md:text-xl leading-[1.4] w-[50vw] tracking-tighter text-center">
           Cursus ultricies in maecenas pulvinar ultrices integer quam amet,
           semper dictumst sit interdum ut venenatis pellentesque nunc.
         </p>
-        <button className="mt-15 border border-red-500 px-6 py-2 hover:bg-red-500 rounded hover:text-white text-red-500 text-2xl">
+        <button className="mt-15 border border-red-500 px-3 md:px-6 md:py-2 hover:bg-red-500 rounded hover:text-white text-red-500 text-lg md:text-2xl">
           View All Menu
         </button>
       </div>
@@ -191,7 +191,7 @@ const Home = () => {
           <h1 className="text-4xl lg:text-7xl font-semibold tracking-tighter text-black">
             Best Deals!
           </h1>
-          <button className="border border-red-500 rounded px-6 py-2 text-xl lg:text-2xl text-red-500 hover:bg-red-500 hover:text-white font-normal tracking-tighter ">
+          <button className="border border-red-500 rounded px-3 md:px-6 md:py-2 text-lg lg:text-2xl text-red-500 hover:bg-red-500 hover:text-white font-normal tracking-tighter ">
             View All
           </button>
         </div>
