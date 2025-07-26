@@ -6,8 +6,6 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleShowSlider = () => {};
-
   return (
     <header className="absolute top-0 w-full h-full text-white z-[10] overflow-hidden">
       <div className="flex w-full items-center justify-between py-5 px-5 md:px-10">
