@@ -33,7 +33,7 @@ const Contact = () => {
           </h1>
         </div>
       </div>
-      <div className="w-full h-[180vh] flex flex-col lg:flex-row px-0 lg:px-18 tracking-tighter -mt-14">
+      <div className="w-full min-h-[180vh] flex flex-col lg:flex-row px-0 lg:px-18 tracking-tighter -mt-14">
         <div className="w-full lg:w-[30vw] rounded-t-4xl lg:rounded-l-4xl bg-[#F7F6F2] h-full px-10 py-10">
           <h1 className="text-3xl lg:text-5xl font-bold lg:font-semibold items-start">
             Corporate Office
