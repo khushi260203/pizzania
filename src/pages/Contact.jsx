@@ -7,9 +7,10 @@ import { toast } from "react-toastify";
 const Contact = () => {
   const navigate = useNavigate();
 
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState:{errors }, } = useForm();
 
-  const SubmitHandler = () => {
+  const SubmitHandler = (data) => {
+    console.log("Form Data:", data);
     toast.success("Form Submitted!");
     reset();
     navigate("/submitted");
@@ -98,40 +99,75 @@ const Contact = () => {
                 className="border border-gray-400 rounded w-1/2 px-6 py-2 mt-2"
                 type="text"
                 placeholder="First Name"
+                {...register("firstName", { required: "First name is required" })}
               />
+              {errors.firstName && (
+              <p className="text-red-500 text-sm">{errors.firstName.message}</p>
+            )}
               <input
                 className="border border-gray-400 w-1/2 rounded px-6 py-2 mt-2"
                 type="text "
                 placeholder="Last Name"
+                {...register("lastName", { required: "Last name is required" })}
               />
+               {errors.lastName && (
+              <p className="text-red-500 text-sm">{errors.lastName.message}</p>
+            )}
             </div>
+            
+           
             <h1 className="text-lg mt-8">Email</h1>
             <input
               className="border border-gray-400 rounded px-6 w-full lg:w-[40vw] py-2 mt-2"
               type="Email "
               placeholder="Email address"
+              {...register("email", { required: "Email is required" })}
             />
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email.message}</p>
+            )}
             <h1 className="text-lg mt-8">Phone Number</h1>
             <input
               className="border border-gray-400 rounded px-6 w-full lg:w-[40vw] py-2 mt-2"
               type="number "
               placeholder="Phone no."
+              {...register("phone", { required: "Phone number is required" })}
             />
+            {errors.phone && (
+              <p className="text-red-500 text-sm">{errors.phone.message}</p>
+            )}
+            
             <h1 className="text-lg mt-8">Subject</h1>
             <input
               className="border border-gray-400 rounded px-6 w-full lg:w-[40vw] py-2 mt-2"
               type="text "
               placeholder="Subject"
+               {...register("subject", { required: "Subject is required" })}
             />
+            {errors.subject && (
+              <p className="text-red-500 text-sm">{errors.subject.message}</p>
+            )}
+            
             <h1 className="text-lg mt-8">Select Location</h1>
-            <select className="border border-gray-400 rounded px-6 w-full lg:w-[40vw] py-2 mt-2">
+            <select className="border border-gray-400 rounded px-6 w-full lg:w-[40vw] py-2 mt-2"
+                {...register("location", { required: "Location is required" })} >
+                 <option value="">-- Select Location --</option>
               <option>The Pizzania Roma</option>
               <option>The Pizzania Madrid</option>
               <option>The Pizzania Paris</option>
               <option>The Pizzania Miami</option>
             </select>
+             {errors.location && (
+              <p className="text-red-500 text-sm">{errors.location.message}</p>
+            )}
+
             <h1 className="text-lg mt-8">Comment or message</h1>
-            <textarea className="border border-gray-400 rounded px-6 w-full lg:w-[40vw] h-[25vh] py-2 mt-2"></textarea>
+            <textarea className="border border-gray-400 rounded px-6 w-full lg:w-[40vw] h-[25vh] py-2 mt-2"
+            {...register("message", { required: "Message is required" })}
+            />
+            {errors.message && (
+              <p className="text-red-500 text-sm">{errors.message.message}</p>
+            )}
             <div>
               <button
                 onClick={() => handleSubmit()}
